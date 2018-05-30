@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class Finaljava {
 
-    /**
+    /**This reads the number of account which you want  this program to read
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -29,7 +29,11 @@ public class Finaljava {
 		}
 		
 		//run loop until menu 5 is not pressed
+                
 		int ch;
+                
+                 
+              
 		do
 		{
 			System.out.println("Main Menu\n1.display All\n2.Search By Account\n3.Deposit\n4.Withdrawal\n5.exit");
@@ -139,7 +143,10 @@ public class Finaljava {
     }                           
 
                  
-                
+    /**
+     * 
+     * @author shabnam
+     */            
 
 class Bank
 {
@@ -150,6 +157,9 @@ class Bank
 	Scanner KB=new Scanner(System.in);
 	
 	//method to open an account
+        /**
+         * 
+         */
 	void openAccount()
 	{ 
 		System.out.print("Enter Account No: ");
@@ -192,6 +202,11 @@ class Bank
 	}
 
 	//method to search an account number
+        /**
+         * To check whether the given account number is ligal or not
+         * @param acn takes the account number
+         * @return 
+         */
 	boolean search(String acn)
 	{ 
 		if(accno.equals(acn))//acn is entered account num and check if entered acn for some operation is equal to the exixting accoun 
